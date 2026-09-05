@@ -53,6 +53,26 @@
             //Product.PrintReport(catalog, (Product) => Console.WriteLine($"[{Product.Category}] {Product.Name} | Price: ${Product.Price} | Stock: {Product.Stock}"));
 
             #endregion
+
+            #region Task 3.2
+
+            //Console.WriteLine("--- Summary List ---");
+            //List<string> summary = Product.TransformProducts(catalog, (Product) => $"{Product.Name} (${Product.Price})");
+            //foreach(string str in summary)
+            //{
+            //    Console.WriteLine(str);
+            //}
+
+            //Console.WriteLine();
+
+            //Console.WriteLine("--- Price Labels ---");
+            //List<string> Price = Product.TransformProducts(catalog, (Product) => { if (Product.Price > 100) return $"{Product.Name}: Expensive!"; else return $"{Product.Name}: Affordable"; });
+            //foreach (string str in Price)
+            //{
+            //    Console.WriteLine(str);
+            //}
+
+            #endregion
         }
     }
 }

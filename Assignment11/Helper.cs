@@ -13,5 +13,6 @@ namespace Assignment11
                 Console.WriteLine($"{item.Name} - ${item.Price} (Stock: {item.Stock})");
             }
         }
+
     }
 }
