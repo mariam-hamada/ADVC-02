@@ -29,6 +29,7 @@ namespace Assignment11
 
         public static void PrintReport (List<Product> products , Action<Product> PrintProduct)
         {
+            // we use Action because it takes one paramenter of type product and Doexn't return Anything .
             foreach (Product p in products)
             {
                 PrintProduct(p);
@@ -37,6 +38,7 @@ namespace Assignment11
 
         public static List<string> TransformProducts(List<Product> products, Func<Product, string> transform) 
         {
+            // we use Func because it takes one paramenter of type product and return list of strings .
             List<string> result = new List<string>();
             foreach (Product p in products)
             {
@@ -44,6 +46,18 @@ namespace Assignment11
             }
             return result;
 
+        }
+
+        public static List<Product> FilterProducts (List<Product> products , Predicate<Product> filter)
+        {
+            // we use Predicate because it takes one paramenter of type product and return bool .
+            List<Product> result = new List<Product>();
+            foreach (Product p in products)
+            {
+                if (filter(p))
+                    result.Add(p);
+            }
+            return result;
         }
 
         #endregion

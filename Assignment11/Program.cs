@@ -58,7 +58,7 @@
 
             //Console.WriteLine("--- Summary List ---");
             //List<string> summary = Product.TransformProducts(catalog, (Product) => $"{Product.Name} (${Product.Price})");
-            //foreach(string str in summary)
+            //foreach (string str in summary)
             //{
             //    Console.WriteLine(str);
             //}
@@ -72,6 +72,16 @@
             //    Console.WriteLine(str);
             //}
 
+            #endregion
+
+            #region Task 3.3
+
+            //Console.WriteLine("--- Low-Stock Alert");
+            //List<Product> LowStock = Product.FilterProducts(catalog, (product) => product.Stock < 20);
+            //foreach (Product product in LowStock) 
+            //{
+            //    Console.WriteLine($"[LOW STOCK] {product.Name}: only {product.Stock} left!");
+            //}
             #endregion
         }
     }
